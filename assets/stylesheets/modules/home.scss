@@ -1,0 +1,112 @@
+.home__hero-wrap {
+  margin-top: -1px; // To position on top of header bottom border
+  @extend %box-sizing;
+  background: {
+    color: $maroon;
+    image: url(/pho.jpg);
+    size: cover;
+    position: center 40%;
+  }
+  @media (max-width: 479px) {
+    margin-bottom: 30px;
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
+  }
+  @media (min-width: 480px) {
+    margin-bottom: 48px;
+    padding: {
+      top: 70px;
+      bottom: 70px;
+    }
+  }
+}
+
+.home__hero {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  font: {
+    weight: lighter;
+    style: italic;
+  }
+  text-align: center;
+  color: $white;
+  @media (max-width: 479px) {
+    max-width: 220px;
+    font-size: 32px;
+  }
+  @media (min-width: 480px) {
+    max-width: 340px;
+    font-size: 50px;
+  }
+  &:before, &:after {
+    content: "";
+    margin: {
+      right: auto;
+      left: auto;
+    }
+    display: block;
+    background: {
+      color: $white;
+      color: rgba($white, .4);
+    }
+    @media (max-width: 479px) {
+      height: 4px;
+      width: 140px;
+    }
+    @media (min-width: 480px) {
+      height: 6px;
+      width: 220px;
+    }
+  }
+  &:before {
+    @media (max-width: 479px) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: 480px) {
+      margin-bottom: 24px;
+    }
+  }
+  &:after {
+    @media (max-width: 479px) {
+      margin-top: 16px;
+    }
+    @media (min-width: 480px) {
+      margin-top: 24px;
+    }
+  }
+}
+
+.home__welcome {
+  margin-bottom: 13px;
+  font-weight: normal;
+  @include transition-duration(.25s);
+  @include transition-property(font-size);
+  @media (max-width: 479px) {
+    font-size: 20px;
+  }
+  @media (min-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+.home__desc {
+  line-height: 1.66;
+  @include transition-duration(.25s);
+  @include transition-property(font-size);
+  @media (max-width: 479px) {
+    font-size: 13px;
+  }
+  @media (min-width: 480px) {
+    font-size: 16px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 18px;
+  }
+  &:last-child {
+    padding-bottom: 160px;
+  }
+}
