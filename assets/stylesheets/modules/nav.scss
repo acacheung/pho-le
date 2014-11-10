@@ -1,3 +1,25 @@
 .nav {
-  display: none;
+  position: absolute;
+  top: 80px;
+  width: 140px;
+}
+
+.nav__item {
+  display: block;
+  padding: {
+    top: 5px;
+    right: 18px;
+    bottom: 5px;
+  }
+  text: {
+    align: right;
+    transform: uppercase;
+    decoration: none;
+  }
+  color: $maroon;
+  @include transition-duration(.25s);
+  @include transition-property(opacity);
+  &:hover {
+    opacity: .6;
+  }
 }

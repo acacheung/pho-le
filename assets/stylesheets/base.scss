@@ -21,13 +21,20 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html, body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 body {
-  background-color: $gray;
+  background-color: rgba($gray, .2);
   font-family: "open sans", sans-serif;
   color: $maroon;
 }
 
 main {
+  position: relative;
+  left: 140px;
   background-color: $white;
 }
 
