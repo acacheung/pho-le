@@ -14,26 +14,42 @@
   </head>
 
   <body>
-    <div class="header-wrap">
-      <header class="header">
-        <a class="header__logo" href="/">
-          <span class="t-hidden">Le’s Restaurant</span>
-        </a>
-        <a class="header__club-sandwich" href="#">
-          <span class="icon" aria-hidden="true">☰</span>
-          <span class="t-hidden">Navigation menu</span>
-        </a>
-      </header>
-    </div>
-
+    <a class="nav__close" href="#">
+      <span class="icon" aria-hidden="true">x</span>
+      <span class="t-hidden">Close navigation menu</span>
+    </a>
     <nav class="nav">
       <a class="nav__item" href="/">Home</a>
-      <a class="nav__item" href="/menu">Menu</a>
       <a class="nav__item" href="/press">Press</a>
       <a class="nav__item" href="/contact">Contact</a>
     </nav>
+    <div class="nav__locations">
+      <div class="nav__location">
+        <h1 class="nav__location__heading">Allston</h1>
+        <a href="#" class="nav__location__phone">617-783-2340</a>
+        <a href="#" class="nav__location__address">137 Brighton Ave</a>
+        <a href="#" class="nav__location__delivery">Delivery</a>
+      </div>
+      <div class="nav__location">
+        <h1 class="nav__location__heading">Cambridge</h1>
+        <a href="#" class="nav__location__phone">617-783-2340</a>
+        <a href="#" class="nav__location__address">137 Harvard Ave</a>
+        <a href="#" class="nav__location__delivery">Delivery</a>
+      </div>
+    </div>
 
     <main>
+      <div class="header-wrap">
+        <header class="header">
+          <a class="header__logo" href="/">
+            <span class="t-hidden">Le’s Restaurant</span>
+          </a>
+          <a class="header__club-sandwich" href="#">
+            <span class="icon" aria-hidden="true">☰</span>
+            <span class="t-hidden">Navigation menu</span>
+          </a>
+        </header>
+      </div>
       <%= yield %>
     </main>
   </body>

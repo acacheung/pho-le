@@ -1,14 +1,59 @@
+.nav__close {
+  @media (max-width: 499px) {
+    left: 5%;
+  }
+  @media (min-width: 500px) and (max-width: 999px) {
+    left: 3%;
+  }
+  @media (max-width: 999px) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    color: $maroon;
+    @include transition-duration(.25s);
+    @include transition-property(opacity);
+    &:hover {
+      opacity: .6;
+    }
+  }
+  @media (min-width: 1000px) {
+    display: none;
+  }
+}
+
 .nav {
+  padding-top: 20px;
   position: absolute;
-  top: 80px;
-  width: 140px;
+  @extend %box-sizing;
+  border-top: 1px solid #e5e4df;
+  border-top: 1px solid rgba($gray, .3);
+  @media (max-width: 499px) {
+    margin-left: 5%;
+    padding-right: 5%;
+  }
+  @media (min-width: 500px) and (max-width: 999px) {
+    margin-left: 3%;
+    padding-right: 3%;
+  }
+  @media (max-width: 999px) {
+    top: 61px;
+    width: 150px;
+  }
+  @media (min-width: 1000px) {
+    margin-left: 40px;
+    padding-right: 40px;
+    top: 104px;
+    width: 200px;
+  }
 }
 
 .nav__item {
   display: block;
   padding: {
     top: 5px;
-    right: 18px;
     bottom: 5px;
   }
   text: {
@@ -19,7 +64,79 @@
   color: $maroon;
   @include transition-duration(.25s);
   @include transition-property(opacity);
+  @media (max-width: 999px) {
+    padding-right: 18px;
+  }
+  @media (min-width: 1000px) {
+    padding-right: 26px;
+    font-size: 18px;
+  }
   &:hover {
     opacity: .6;
+  }
+}
+
+.nav__locations {
+  position: absolute;
+  @extend %box-sizing;
+  text-align: right;
+  line-height: 1.66;
+  @media (max-width: 499px) {
+    margin-left: 5%;
+    padding-right: 5%;
+  }
+  @media (min-width: 500px) and (max-width: 999px) {
+    margin-left: 3%;
+    padding-right: 3%;
+  }
+  @media (max-width: 999px) {
+    top: 200px;
+    width: 150px;
+    font-size: 13px;
+  }
+  @media (min-width: 1000px) {
+    margin-left: 40px;
+    padding-right: 40px;
+    top: 250px;
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+.nav__location {
+  margin-bottom: 16px;
+  @media (max-width: 999px) {
+    padding-right: 18px;
+  }
+  @media (min-width: 1000px) {
+    padding-right: 26px;
+  }
+}
+
+.nav__location__heading {
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.nav__location__phone, .nav__location__address, .nav__location__delivery {
+  display: block;
+  font-style: italic;
+  text-decoration: none;
+  color: $blue;
+  @include transition-duration(.25s);
+  @include transition-property(opacity);
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.nav__location__delivery {
+  &:after {
+    margin-left: 5px;
+    font: {
+      family: "Arial", sans-serif;
+      style: normal;
+    }
+    content: "→";
   }
 }

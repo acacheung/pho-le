@@ -3,8 +3,6 @@
     right: 5%;
     left: 5%;
   }
-  position: relative;
-  left: 140px;
   background-color: $white;
 }
 
@@ -29,7 +27,7 @@
     repeat: no-repeat;
     size: 100%;
   }
-  @media (max-width: 899px) {
+  @media (max-width: 999px) {
     padding: {
       top: 8px;
       bottom: 8px;
@@ -38,7 +36,7 @@
     width: 50px;
     background-position: 0 8px;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     padding: {
       top: 20px;
       bottom: 20px;
@@ -50,7 +48,7 @@
 }
 
 .header__club-sandwich {
-  @media (max-width: 768px) {
+  @media (max-width: 999px) {
     position: absolute;
     top: 0;
     left: 5%;
@@ -64,7 +62,7 @@
       opacity: .6;
     }
   }
-  @media (min-width: 769px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 }
