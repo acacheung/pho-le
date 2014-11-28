@@ -34,15 +34,19 @@ body {
 }
 
 main {
+  margin-right: 0;
   position: relative;
-  left: 0;
   box-shadow: -4px 0 0 0 #eeeeea;
   box-shadow: -4px 0 0 0 rgba($gray, .1);
   background-color: $white;
   @include transition-duration(.25s);
-  @include transition-property(left);
-  @media (min-width: 770px) and (max-width: 999px) {
-    margin-right: 150px;
+  @include transition-property(margin-right, left);
+  @media (max-width: 999px) {
+    left: 0;
+  }
+  @media (min-width: 1000px) {
+    margin-right: 200px;
+    left: 200px;
   }
 }
 
@@ -50,9 +54,8 @@ main {
   @media (max-width: 999px) {
     left: 150px;
   }
-  @media (min-width: 1000px) {
-    margin-right: 200px;
-    left: 200px;
+  @media (min-width: 770px) and (max-width: 999px) {
+    margin-right: 150px;
   }
 }
 
