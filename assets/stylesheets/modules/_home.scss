@@ -3,7 +3,7 @@
   @extend %box-sizing;
   background: {
     color: $maroon;
-    image: url(/pho.jpg);
+    image: url(../../public/pho.jpg);
     size: cover;
     position: center 40%;
   }
