@@ -65,8 +65,10 @@ main {
     weight: normal;
     style: normal;
   }
-  src: url("/fonts/icomoon.eot");
-  src: url("/fonts/icomoon.eot?#iefix") format("eot"), url("/fonts/icomoon.woff") format("woff"), url("/fonts/icomoon.ttf") format("truetype");
+  src: url("../../public/fonts/icomoon.eot");
+  src: url("../../public/fonts/icomoon.eot?#iefix") format("eot"),
+       url("../../public/fonts/icomoon.woff") format("woff"),
+       url("../../public/fonts/icomoon.ttf") format("truetype");
 }
 
 .icon {
