@@ -1,5 +1,0 @@
-%button {
-  -webkit-appearance: none;
-  @include transition-duration(.25s);
-  @include transition-property(border-color, background-color);
-}
