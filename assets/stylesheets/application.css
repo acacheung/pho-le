@@ -111,7 +111,7 @@ main {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  background-image: url(/logo.svg);
+  background-image: url(../../public/logo.svg);
   background-repeat: no-repeat;
   background-size: 100%; }
   @media (max-width: 999px) {
@@ -157,7 +157,7 @@ main {
 .home__hero-wrap {
   margin-top: -1px;
   background-color: #48180e;
-  background-image: url(/pho.jpg);
+  background-image: url(../../public/pho.jpg);
   background-size: cover;
   background-position: center 40%; }
   @media (max-width: 479px) {
