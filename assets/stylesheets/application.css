@@ -124,8 +124,13 @@ b {
 
 .contact__infos {
   margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center; }
+  margin-bottom: 30px; }
+  @media (max-width: 449px) {
+    .contact__infos p {
+      margin-bottom: 10px; } }
+  @media (min-width: 450px) {
+    .contact__infos {
+      text-align: center; } }
 
 .contact__map {
   width: 100%; }
