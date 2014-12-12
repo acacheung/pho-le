@@ -42,6 +42,7 @@ body {
 main {
   margin-right: 0;
   position: relative;
+  min-height: 100vh;
   box-shadow: -4px 0 0 0 #eeeeea;
   box-shadow: -4px 0 0 0 rgba(196, 194, 181, 0.1);
   background-color: #ffffff;
@@ -60,12 +61,12 @@ main {
       left: 0; } }
   @media (min-width: 1000px) {
     main {
-      margin-right: 200px;
-      left: 200px; } }
+      margin-right: 240px;
+      left: 240px; } }
 
 @media (max-width: 999px) {
   .mobile-nav-is-expanded {
-    left: 150px; } }
+    left: 180px; } }
 @media (min-width: 770px) and (max-width: 999px) {
   .mobile-nav-is-expanded {
     margin-right: 150px; } }
@@ -87,6 +88,32 @@ main {
   padding-left: 8%;
   max-width: 500px; }
 
+b {
+  font-weight: bold; }
+
+.t-link, .t-link--has-arrow {
+  font-style: italic;
+  text-decoration: none;
+  color: #788a90;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+  .t-link:hover, .t-link--has-arrow:hover {
+    opacity: .6; }
+
+.t-link--has-arrow:after {
+  content: "→";
+  margin-left: 5px;
+  font-family: "Arial", sans-serif;
+  font-style: normal; }
+
 .t-hidden {
   position: absolute !important;
   height: 1px;
@@ -94,6 +121,14 @@ main {
   overflow: hidden;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px); }
+
+.contact__infos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.contact__map {
+  width: 100%; }
 
 .header-wrap {
   padding-right: 5%;
@@ -359,13 +394,13 @@ main {
   @media (max-width: 999px) {
     .nav {
       top: 61px;
-      width: 150px; } }
+      width: 180px; } }
   @media (min-width: 1000px) {
     .nav {
       margin-left: 40px;
       padding-right: 40px;
       top: 104px;
-      width: 200px; } }
+      width: 240px; } }
 
 .nav__item {
   display: block;
@@ -394,6 +429,30 @@ main {
       font-size: 18px; } }
   .nav__item:hover {
     opacity: .6; }
+  .nav__item.is-active {
+    position: relative;
+    color: #f8bb5f; }
+    .nav__item.is-active:hover {
+      opacity: 1; }
+    .nav__item.is-active:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-top-style: solid;
+      border-top-color: transparent;
+      border-right-style: solid;
+      border-right-color: #f8bb5f;
+      border-bottom-style: solid;
+      border-bottom-color: transparent; }
+      @media (max-width: 999px) {
+        .nav__item.is-active:after {
+          top: 6px; } }
+      @media (min-width: 1000px) {
+        .nav__item.is-active:after {
+          top: 7px; } }
 
 .nav__locations {
   position: absolute;
@@ -409,15 +468,15 @@ main {
       padding-right: 3%; } }
   @media (max-width: 999px) {
     .nav__locations {
-      top: 224px;
-      width: 150px;
+      top: 192px;
+      width: 180px;
       font-size: 13px; } }
   @media (min-width: 1000px) {
     .nav__locations {
       margin-left: 40px;
       padding-right: 40px;
-      top: 278px;
-      width: 200px;
+      top: 244px;
+      width: 240px;
       font-size: 16px; } }
 
 .nav__location {
@@ -431,30 +490,25 @@ main {
 
 .nav__location__heading {
   font-weight: bold;
-  font-size: inherit; }
+  font-size: 18px; }
 
 .nav__location__phone, .nav__location__address, .nav__location__delivery {
-  display: block;
-  font-style: italic;
-  text-decoration: none;
-  color: #788a90;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -ms-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -ms-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity; }
-  .nav__location__phone:hover, .nav__location__address:hover, .nav__location__delivery:hover {
-    opacity: .6; }
+  display: block; }
 
-.nav__location__delivery:after {
-  margin-left: 5px;
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  content: "→"; }
+.nav__location__delivery {
+  text-transform: uppercase; }
+
+.interior__hero {
+  margin-top: 40px;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  color: #48180e; }
+  @media (max-width: 479px) {
+    .interior__hero {
+      font-size: 32px; } }
+  @media (min-width: 480px) {
+    .interior__hero {
+      font-size: 50px; } }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,0 +1,15 @@
+.interior__hero {
+  margin-top: 40px;
+  font: {
+    weight: lighter;
+    style: italic;
+  }
+  text-align: center;
+  color: $maroon;
+  @media (max-width: 479px) {
+    font-size: 32px;
+  }
+  @media (min-width: 480px) {
+    font-size: 50px;
+  }
+}
