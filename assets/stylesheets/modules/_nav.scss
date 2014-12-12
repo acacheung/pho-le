@@ -40,13 +40,13 @@
   }
   @media (max-width: 999px) {
     top: 61px;
-    width: 150px;
+    width: 180px;
   }
   @media (min-width: 1000px) {
     margin-left: 40px;
     padding-right: 40px;
     top: 104px;
-    width: 200px;
+    width: 240px;
   }
 }
 
@@ -74,6 +74,35 @@
   &:hover {
     opacity: .6;
   }
+  &.is-active {
+    position: relative;
+    color: $yellow;
+    &:hover {
+      opacity: 1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 0;
+      height: 0;
+      border: {
+        width: 10px;
+        top-style: solid;
+        top-color: transparent;
+        right-style: solid;
+        right-color: $yellow;
+        bottom-style: solid;
+        bottom-color: transparent;
+      }
+      @media (max-width: 999px) {
+        top: 6px;
+      }
+      @media (min-width: 1000px) {
+        top: 7px;
+      }
+    }
+  }
 }
 
 .nav__locations {
@@ -90,15 +119,15 @@
     padding-right: 3%;
   }
   @media (max-width: 999px) {
-    top: 224px;
-    width: 150px;
+    top: 192px;
+    width: 180px;
     font-size: 13px;
   }
   @media (min-width: 1000px) {
     margin-left: 40px;
     padding-right: 40px;
-    top: 278px;
-    width: 200px;
+    top: 244px;
+    width: 240px;
     font-size: 16px;
   }
 }
@@ -115,28 +144,13 @@
 
 .nav__location__heading {
   font-weight: bold;
-  font-size: inherit;
+  font-size: 18px;
 }
 
 .nav__location__phone, .nav__location__address, .nav__location__delivery {
   display: block;
-  font-style: italic;
-  text-decoration: none;
-  color: $blue;
-  @include transition-duration(.25s);
-  @include transition-property(opacity);
-  &:hover {
-    opacity: .6;
-  }
 }
 
 .nav__location__delivery {
-  &:after {
-    margin-left: 5px;
-    font: {
-      family: "Arial", sans-serif;
-      style: normal;
-    }
-    content: "→";
-  }
+  text-transform: uppercase;
 }
