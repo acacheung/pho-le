@@ -151,7 +151,7 @@ b {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  background-image: url(../../public/logo.svg);
+  background-image: url(../../public/pho-le.svg);
   background-repeat: no-repeat;
   background-size: 100%; }
   @media (max-width: 999px) {
@@ -166,8 +166,8 @@ b {
       padding-top: 20px;
       padding-bottom: 20px;
       height: 64px;
-      width: 70px;
-      background-position: 0 20px; } }
+      width: 200px;
+      background-position: 0 24px; } }
 
 @media (max-width: 999px) {
   .header__club-sandwich {
