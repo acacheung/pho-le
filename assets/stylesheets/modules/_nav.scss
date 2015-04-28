@@ -119,14 +119,14 @@
     padding-right: 3%;
   }
   @media (max-width: 999px) {
-    top: 192px;
+    top: 230px;
     width: 180px;
     font-size: 13px;
   }
   @media (min-width: 1000px) {
     margin-left: 40px;
     padding-right: 40px;
-    top: 244px;
+    top: 280px;
     width: 240px;
     font-size: 16px;
   }
@@ -147,10 +147,6 @@
   font-size: 18px;
 }
 
-.nav__location__phone, .nav__location__address, .nav__location__delivery {
+.nav__location__phone, .nav__location__address {
   display: block;
-}
-
-.nav__location__delivery {
-  text-transform: uppercase;
 }
