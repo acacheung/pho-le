@@ -1,8 +1,6 @@
 .header-wrap {
-  padding: {
-    right: 5%;
-    left: 5%;
-  }
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: $white;
 }
 
@@ -17,10 +15,8 @@
 }
 
 .header__logo {
-  margin: {
-    right: auto;
-    left: auto;
-  }
+  margin-right: auto;
+  margin-left: auto;
   display: block;
   background: {
     image: url(../../public/pho-le.svg);
