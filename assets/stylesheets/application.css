@@ -41,11 +41,12 @@ body {
 
 main {
   margin-right: 0;
+  padding-bottom: 160px;
   position: relative;
   min-height: 100vh;
   box-shadow: -4px 0 0 0 #eeeeea;
   box-shadow: -4px 0 0 0 rgba(196, 194, 181, 0.1);
-  background-color: white;
+  background-color: #ffffff;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   -ms-transition-duration: 0.25s;
@@ -77,7 +78,6 @@ main {
   font-style: normal;
   src: url("../../public/fonts/icomoon.eot");
   src: url("../../public/fonts/icomoon.eot?#iefix") format("eot"), url("../../public/fonts/icomoon.woff") format("woff"), url("../../public/fonts/icomoon.ttf") format("truetype"); }
-
 .icon {
   font-family: "icomoon";
   speak: none; }
@@ -123,6 +123,41 @@ b {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px); }
 
+.heading {
+  margin-top: 40px;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  color: #48180e; }
+  @media (max-width: 479px) {
+    .heading {
+      font-size: 32px; } }
+  @media (min-width: 480px) {
+    .heading {
+      font-size: 50px; } }
+
+.subheading {
+  margin-bottom: 13px;
+  font-weight: normal;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: font-size;
+  -moz-transition-property: font-size;
+  -ms-transition-property: font-size;
+  -o-transition-property: font-size;
+  transition-property: font-size; }
+  @media (max-width: 479px) {
+    .subheading {
+      margin-top: 30px;
+      font-size: 20px; } }
+  @media (min-width: 480px) {
+    .subheading {
+      margin-top: 48px;
+      font-size: 28px; } }
+
 .contact__infos {
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -140,7 +175,7 @@ b {
 .header-wrap {
   padding-right: 5%;
   padding-left: 5%;
-  background-color: white; }
+  background-color: #ffffff; }
 
 .header {
   margin-right: auto;
@@ -204,12 +239,10 @@ b {
   background-position: center 40%; }
   @media (max-width: 479px) {
     .home__hero-wrap {
-      margin-bottom: 30px;
       padding-top: 50px;
       padding-bottom: 50px; } }
   @media (min-width: 480px) {
     .home__hero-wrap {
-      margin-bottom: 48px;
       padding-top: 70px;
       padding-bottom: 70px; } }
 
@@ -219,7 +252,7 @@ b {
   font-weight: lighter;
   font-style: italic;
   text-align: center;
-  color: white; }
+  color: #ffffff; }
   @media (max-width: 479px) {
     .home__hero {
       max-width: 220px;
@@ -233,7 +266,7 @@ b {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    background-color: white;
+    background-color: #ffffff;
     background-color: rgba(255, 255, 255, 0.4); }
     @media (max-width: 479px) {
       .home__hero:before, .home__hero:after {
@@ -256,26 +289,6 @@ b {
     .home__hero:after {
       margin-top: 24px; } }
 
-.home__welcome {
-  margin-bottom: 13px;
-  font-weight: normal;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -ms-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transition-property: font-size;
-  -moz-transition-property: font-size;
-  -ms-transition-property: font-size;
-  -o-transition-property: font-size;
-  transition-property: font-size; }
-  @media (max-width: 479px) {
-    .home__welcome {
-      font-size: 20px; } }
-  @media (min-width: 480px) {
-    .home__welcome {
-      font-size: 28px; } }
-
 .home__desc {
   line-height: 1.66;
   -webkit-transition-duration: 0.25s;
@@ -296,8 +309,6 @@ b {
       font-size: 16px; } }
   .home__desc:not(:last-child) {
     padding-bottom: 18px; }
-  .home__desc:last-child {
-    padding-bottom: 160px; }
 
 .menu__heading {
   margin-top: 24px;
@@ -326,7 +337,7 @@ b {
   padding-right: 8px;
   display: inline;
   position: relative;
-  background-color: white;
+  background-color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.66;
@@ -347,7 +358,7 @@ b {
   position: absolute;
   top: 2px;
   right: 0;
-  background-color: white;
+  background-color: #ffffff;
   font-weight: bold;
   z-index: 1; }
 
@@ -502,15 +513,32 @@ b {
 .nav__location__phone, .nav__location__address {
   display: block; }
 
-.interior__hero {
-  margin-top: 40px;
-  font-weight: lighter;
-  font-style: italic;
-  text-align: center;
-  color: #48180e; }
-  @media (max-width: 479px) {
-    .interior__hero {
-      font-size: 32px; } }
-  @media (min-width: 480px) {
-    .interior__hero {
-      font-size: 50px; } }
+@media (max-width: 479px) {
+  .l-press {
+    margin-top: 30px; } }
+@media (min-width: 480px) {
+  .l-press {
+    margin-top: 48px; } }
+
+.press {
+  list-style-type: none; }
+
+.press:not(:last-child) {
+  padding-bottom: 30px; }
+
+.press__date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px; }
+
+.press a {
+  margin-top: 10px;
+  display: inline-block; }
+
+.press a + a {
+  margin-left: 20px; }
+
+/*# sourceMappingURL=application.css.map */
