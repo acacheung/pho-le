@@ -320,11 +320,34 @@ b {
   margin-bottom: 18px;
   display: block;
   font-weight: normal;
+  font-style: italic;
   text-transform: none; }
+
+.menu {
+  padding-left: 28px;
+  list-style-type: decimal; }
 
 .menu__item {
   padding-bottom: 28px;
-  position: relative; }
+  position: relative;
+  counter-increment: custom; }
+  .menu__item:before {
+    content: counter(custom);
+    padding-right: 6px;
+    padding-left: 6px;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: calc(100% + 8px);
+    min-width: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #788a90;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center; }
   .menu__item:after {
     content: "";
     position: absolute;
@@ -332,6 +355,17 @@ b {
     left: 0;
     width: 100%;
     border-top: 1px dotted #c4c2b5; }
+
+.menu--salads {
+  counter-reset: custom 15; }
+
+.menu--specials .menu__item {
+  counter-increment: specials; }
+  .menu--specials .menu__item:before {
+    content: "S" counter(specials,decimal); }
+
+.menu--special-noodle-soups {
+  counter-reset: custom 30; }
 
 .menu__item__name {
   padding-right: 8px;
@@ -346,10 +380,10 @@ b {
 .menu__item__name--translation {
   display: block;
   font-size: 15px;
+  font-style: italic;
   line-height: 1.66; }
 
 .menu__item__desc, .menu__item__desc--has-image {
-  font-style: italic;
   font-size: 15px;
   line-height: 1.66; }
 
@@ -364,6 +398,43 @@ b {
 
 .menu__item__size {
   font-weight: normal; }
+
+.menu__item__list {
+  margin-top: 14px;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.5; }
+
+.menu__item__list li:not(:first-child) {
+  margin-top: 7px; }
+
+.menu__item__list h3 {
+  font-size: inherit; }
+
+.link--raw {
+  text-decoration: none;
+  color: #788a90;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+  .link--raw:hover {
+    opacity: .6; }
+
+.note--raw {
+  margin-top: 78px;
+  padding: 28px;
+  display: block;
+  border-top: 1px solid #788a90;
+  font-size: 15px;
+  line-height: 1.66;
+  color: #788a90; }
 
 @media (max-width: 499px) {
   .nav__close {

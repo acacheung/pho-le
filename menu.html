@@ -55,7 +55,7 @@
           Appetizers
           <span class="menu__subheading">Món Khai Vị</span>
         </h1>
-        <ol>
+        <ol class="menu menu--appetizers">
           <li class="menu__item">
             <h2 class="menu__item__name">Crispy Spring Rolls</h2>
             <p class="menu__item__name--translation">Chả Giò</p>
@@ -153,7 +153,7 @@
           Salads
           <span class="menu__subheading">Gỏi</span>
         </h1>
-        <ol start="16">
+        <ol class="menu menu--salads">
           <li class="menu__item">
             <h2 class="menu__item__name">Mango Salad</h2>
             <p class="menu__item__name--translation">Gỏi Xoài</p>
@@ -179,7 +179,211 @@
             <p class="menu__item__price">10.95</p>
           </li>
         </ol>
+
+        <h1 class="menu__heading">
+          Specials
+          <span class="menu__subheading">Các Món Đặc Biệt</span>
+        </h1>
+        <ol class="menu menu--specials">
+          <li class="menu__item">
+            <h2 class="menu__item__name">Roasted Catfish Platter</h2>
+            <p class="menu__item__name--translation">Cá Nướng Da Giòn</p>
+            <p class="menu__item__desc">Whole oven-roasted Catfish, topped with scallion, fried shallots and roasted peanuts. Served with vegetable platter, vermicelli, rice paper for wrapping and pineapple-anchovy sauce. Vegetable platter consists of lettuce, herbs (mint, red perilla, fish mint, and basil), sliced cucumber, sliced green apple, bean sprouts, pickled shredded carrot & daikon. Prepared soy or fish sauce can be offered in place of pineapple-anchovy sauce. (Please allow 45 minutes cooking time)</p>
+            <p class="menu__item__price">MKT</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Steamed Whole Striped Bass</h2>
+            <p class="menu__item__name--translation">Cá Striped Bass Hấp</p>
+            <p class="menu__item__desc">Steamed and seasoned with house soy sauce mixture, sliced ginger & scallions, served with white rice.</p>
+            <p class="menu__item__price">MKT</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Crispy Fried Whole Striped Bass</h2>
+            <p class="menu__item__name--translation">Cá Striped Bass Chiên</p>
+            <p class="menu__item__desc">Fried whole until crispy and golden; Served with fish sauce and white rice.</p>
+            <p class="menu__item__price">MKT</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Crispy Soft Shell Crab</h2>
+            <p class="menu__item__name--translation">Cua Lột Rang Muối</p>
+            <p class="menu__item__desc">Two salted &amp; crispy soft shell crabs dressed with julienned bell peppers and onions. Served with white rice.</p>
+            <p class="menu__item__price">MKT</p>
+          </li>
+
+          <li class="menu__item">
+            <h2 class="menu__item__name">Seven Course Beef <a class="link--raw" href="#raw">*</a></h2>
+            <p class="menu__item__name--translation">Bò 7 Món <a class="link--raw" href="#raw">*</a></p>
+            <p class="menu__item__desc">Special Seven Course Beef served with vegetable platter, rice vermicelli, rice paper for wrapping and pineapple-anchovy sauce for dipping. Vegetable platter consists of lettuce, herbs, sliced cucumber, green apple, bean sprouts, pickled carrot &amp; daikon. Soy or fish sauce substitutes available.</p>
+            <p class="menu__item__price">36.95</p>
+            <ol class="menu__item__list">
+              <li>
+                <h3>Lime Cured Beef Salad</h3>
+                <i>Gỏi Bò Tái Chanh</i>
+              </li>
+              <li>
+                <h3>Beef Vinegar Fondue</h3>
+                <i>Bò Nhúng Dấm</i>
+              </li>
+              <li>
+                <h3>Sesame Beef with Butter</h3>
+                <i>Bò Nướng Bơ</i>
+              </li>
+              <li>
+                <h3>Betel Leaf Wrapped Beef</h3>
+                <i>Bò Lá Lốt</i>
+              </li>
+              <li>
+                <h3>Grilled Scallion Beef</h3>
+                <i>Bò Nướng Hành Lá</i>
+              </li>
+              <li>
+                <h3>Meat Ball</h3>
+                <i>Chả Đùm</i>
+              </li>
+              <li>
+                <h3>Rice Chowder</h3>
+                <i>Cháo Bò</i>
+              </li>
+            </ol>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Beef & Vinegar Fondue / Beef in Butter <a class="link--raw" href="#raw">*</a></h2>
+            <p class="menu__item__name--translation">Bò Nhúng Dấm / Bò Nướng Bơ <a class="link--raw" href="#raw">*</a></p>
+            <p class="menu__item__desc">Sliced beef fondue in vinegar or cooked in butter. Served with vegetable platter, rice vermicelli, and rice paper for wrapping and anchovy sauce for dipping. Vegetable platter consists of lettuce, herbs, sliced cucumber, green apple, bean sprouts, pickled carrot & daikon. Soy or fish sauce substitutes available.</p>
+            <p class="menu__item__price">16.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Clay Pot Rice</h2>
+            <p class="menu__item__name--translation">Cơm Tay Cầm</p>
+            <p class="menu__item__desc">Chicken, shrimp, frog legs, mushrooms, mixed vegetables simmered with rice in a clay pot. Available in two sizes.</p>
+            <p class="menu__item__price"><span class="menu__item__size">S</span> 12.95 / <span class="menu__item__size">L</span> 14.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Duck &amp; Bamboo Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bún Măng Vịt</p>
+            <p class="menu__item__desc">Duck and bamboo vermicelli noodle soup. Served with a side of duck salad dressed with ginger fish sauce.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Fermented Seafood &amp; Pork Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bún Mắm</p>
+            <p class="menu__item__desc">Squid, shrimp, pork, eggplant, vermicelli noodles and chives in soup. Accompanied with sliced cabbage &amp; herbs.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Crab &amp; Tomato Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bún Riêu</p>
+            <p class="menu__item__desc">Crab paste, tomatoes, fried tofu and vermicelli noodle soup. Served with a side of fresh vegetables &amp; shrimp paste.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Steamed Rice Rolls</h2>
+            <p class="menu__item__name--translation">Bánh Cuốn Chả Lụa Hoặc Thịt Nướng</p>
+            <p class="menu__item__desc">Steamed rice crepes, cucumbers, blanched bean sprouts, mint, fried shallots &amp; fish sauce. Choice of <i>Vietnamese ham</i> or grilled meat – grilled <i>chicken</i>, <i>beef</i>, or <i>pork</i>.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Ha Noi Style Fried Tofu & Noodle Specialty</h2>
+            <p class="menu__item__name--translation">Bún Đậu Mắm Tôm Hà Nội</p>
+            <p class="menu__item__desc">Fresh lettuce &amp; herbs, crispy tofu, steamed sliced pork, rice vermicelli, and “chả cốm” pork patty mixed with rice flakes. Served with “mắm tôm” or shrimp paste dipping sauce on the side. (Serves 2)</p>
+            <p class="menu__item__price">22.95</p>
+          </li>
+        </ol>
+
+        <h1 class="menu__heading">
+          Special Noodle Soups
+          <span class="menu__subheading">Hủ Tiếu & Bún Đặc Biệt</span>
+        </h1>
+        <ol class="menu menu--special-noodle-soups">
+          <li class="menu__item">
+            <h2 class="menu__item__name">Spicy Hue Style Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bún Bò Huế Đặc Biệt</p>
+            <p class="menu__item__desc">Spicy lemongrass beef soup with sliced beef shin, pork hock, pork paste, and beef tendon. Served with sliced banana blossom, cabbage, bean sprouts, herbs and lime. Add our chili saté if you prefer it extra spicy.</p>
+            <p class="menu__item__price">9.50</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Spicy Hue Style Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bún Bò Bắp</p>
+            <p class="menu__item__desc">Spicy lemongrass beef soup with sliced beef shin only. Served with sliced banana blossom, cabbage, bean sprouts, herbs and lime. Add our chili saté if you prefer it extra spicy.</p>
+            <p class="menu__item__price">8.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Crab Meat Noodle Soup</h2>
+            <p class="menu__item__name--translation">Bánh Canh Cua</p>
+            <p class="menu__item__desc">Handmade noodles in pork soup base served with meatballs consisting of pork, crab and shrimp. Topped with cilantro, scallions, black pepper and fried shallots.</p>
+            <p class="menu__item__price">9.50</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Crab Meat Noodle Soup with Pork Hock</h2>
+            <p class="menu__item__name--translation">Bánh Canh Cua Giò Heo</p>
+            <p class="menu__item__desc">Handmade noodles in pork soup base served with pork hock and meatballs consisting of pork, crab and shrimp. Topped with cilantro, scallions, black pepper and fried shallots.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+
+          <li class="menu__item">
+            <h2 class="menu__item__name">Vietnamese Style Beef Stew</h2>
+            <p class="menu__item__name--translation">Bò Kho - Hủ Tiếu hoặc Bánh Mì</p>
+            <p class="menu__item__desc">Served with a Baguette on the side or Rice Noodles. Spiced beef stew and carrots comes with side of bean sprouts, fresh basil leaves and lime. Add our chili saté if you prefer it spicy.</p>
+            <p class="menu__item__price">8.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Seafood Noodle Soup</h2>
+            <p class="menu__item__name--translation">Hủ Tiếu hoặc Mì Hải Sản</p>
+            <p class="menu__item__desc">Noodle soup with shrimp, imitation crabmeat, squid and fish cake. Choice of rice noodles or egg noodles.</p>
+            <p class="menu__item__price">8.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Mỹ Tho Noodle Soup</h2>
+            <p class="menu__item__name--translation">Hủ Tiếu hoặc Mì Mỹ Tho</p>
+            <p class="menu__item__desc">Noodle soup with shrimp, imitation crabmeat, squid, fish cake and sliced pork. Choice of rice noodles, egg noodles or clear water chestnut noodles.</p>
+            <p class="menu__item__price">8.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Special Seafood Noodle Soup</h2>
+            <p class="menu__item__name--translation">Hủ Tiếu hoặc Mì Đặc Biệt</p>
+            <p class="menu__item__desc">Noodles topped with shrimp, imitation crabmeat, squid, fish cake, sliced pork, sliced pork liver, quail egg, garnished with baby bok-choy. Choice of rice noodles, egg noodles, or clear water chestnut noodles.</p>
+            <p class="menu__item__price">9.95</p>
+          </li>
+          <li class="menu__item">
+            <h2 class="menu__item__name">Chicken Curry Stew</h2>
+            <p class="menu__item__name--translation">Bún Cà Ri Gà</p>
+            <p class="menu__item__desc">Bone in chicken stewed with curry, lemongrass, onions, potatoes, carrots and served with rice vermicelli.</p>
+            <p class="menu__item__price">8.95</p>
+          </li>
+        </ol>
+
+        <!--<h1 class="menu__heading">-->
+          <!--Special Noodle Soups-->
+          <!--<span class="menu__subheading">Hủ Tiếu & Bún Đặc Biệt</span>-->
+        <!--</h1>-->
+        <!--<ol class="menu menu--special-noodle-soups">-->
+          <!--<li class="menu__item">-->
+            <!--<h2 class="menu__item__name">Mango Salad</h2>-->
+            <!--<p class="menu__item__name--translation">Gỏi Xoài</p>-->
+            <!--<p class="menu__item__desc">Shredded green mango tossed with a mixture of poached and dried shrimps in fish vinaigrette.</p>-->
+            <!--<p class="menu__item__price">10.95</p>-->
+          <!--</li>-->
+          <!--<li class="menu__item">-->
+            <!--<h2 class="menu__item__name">Duck Salad</h2>-->
+            <!--<p class="menu__item__name--translation">Gỏi Vịt</p>-->
+            <!--<p class="menu__item__desc">Duck tossed with shredded cabbage in ginger and fish vinaigrette.</p>-->
+            <!--<p class="menu__item__price">11.95</p>-->
+          <!--</li>-->
+          <!--<li class="menu__item">-->
+            <!--<h2 class="menu__item__name">Shrimp &amp; Chicken Salad</h2>-->
+            <!--<p class="menu__item__name--translation">Gỏi Tôm Thịt</p>-->
+            <!--<p class="menu__item__desc">Poached shrimp and shredded chicken tossed with shredded cabbage, shredded carrots and fresh mint in fish vinaigrette. (Can be prepared with shrimp only, chicken only, or with tofu)</p>-->
+            <!--<p class="menu__item__price">8.95</p>-->
+          <!--</li>-->
+          <!--<li class="menu__item">-->
+            <!--<h2 class="menu__item__name">Lotus Root Salad</h2>-->
+            <!--<p class="menu__item__name--translation">Gỏi Ngó Sen</p>-->
+            <!--<p class="menu__item__desc">Crunchy, pickled lotus roots tossed with poached shrimp, sliced pork and shredded carrots in fish vinaigrette.</p>-->
+            <!--<p class="menu__item__price">10.95</p>-->
+          <!--</li>-->
+        <!--</ol>-->
         <h2 class="heading">Other menus coming soon!</h2>
+        <span class="note--raw" id="raw">* Consuming raw or undercooked meats, poultry, seafood or eggs may increase your risk of food bourne illness, especially if you have certain medical conditions.</span>
       </div>
     </main>
   </body>

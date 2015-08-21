@@ -11,12 +11,37 @@
   margin-bottom: 18px;
   display: block;
   font-weight: normal;
+  font-style: italic;
   text-transform: none;
+}
+
+.menu {
+  padding-left: 28px;
+  list-style-type: decimal;
 }
 
 .menu__item {
   padding-bottom: 28px;
   position: relative;
+  counter-increment: custom;
+  &:before {
+    content: counter(custom);
+    padding-right: 6px;
+    padding-left: 6px;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: calc(100% + 8px);
+    min-width: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: $blue;
+    color: $white;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -25,6 +50,21 @@
     width: 100%;
     border-top: 1px dotted $gray;
   }
+}
+
+.menu--salads {
+  counter-reset: custom 15;
+}
+
+.menu--specials .menu__item {
+  counter-increment: specials;
+  &:before {
+    content: "S" counter(specials, decimal);
+  }
+}
+
+.menu--special-noodle-soups {
+  counter-reset: custom 30;
 }
 
 .menu__item__name {
@@ -43,14 +83,12 @@
 .menu__item__name--translation {
   display: block;
   font-size: 15px;
+  font-style: italic;
   line-height: 1.66;
 }
 
 .menu__item__desc, .menu__item__desc--has-image {
-  font: {
-    style: italic;
-    size: 15px;
-  }
+  font-size: 15px;
   line-height: 1.66;
 }
 
@@ -66,4 +104,39 @@
 
 .menu__item__size {
   font-weight: normal;
+}
+
+.menu__item__list {
+  margin-top: 14px;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.menu__item__list li:not(:first-child) {
+  margin-top: 7px;
+}
+
+.menu__item__list h3 {
+  font-size: inherit;
+}
+
+.link--raw {
+  text-decoration: none;
+  color: $blue;
+  @include transition-duration(.25s);
+  @include transition-property(opacity);
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.note--raw {
+  margin-top: 78px;
+  padding: 28px;
+  display: block;
+  border-top: 1px solid $blue;
+  font-size: 15px;
+  line-height: 1.66;
+  color: $blue;
 }
