@@ -46,7 +46,7 @@ main {
   min-height: 100vh;
   box-shadow: -4px 0 0 0 #eeeeea;
   box-shadow: -4px 0 0 0 rgba(196, 194, 181, 0.1);
-  background-color: #ffffff;
+  background-color: white;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   -ms-transition-duration: 0.25s;
@@ -78,6 +78,7 @@ main {
   font-style: normal;
   src: url("../../public/fonts/icomoon.eot");
   src: url("../../public/fonts/icomoon.eot?#iefix") format("eot"), url("../../public/fonts/icomoon.woff") format("woff"), url("../../public/fonts/icomoon.ttf") format("truetype"); }
+
 .icon {
   font-family: "icomoon";
   speak: none; }
@@ -175,7 +176,7 @@ b {
 .header-wrap {
   padding-right: 5%;
   padding-left: 5%;
-  background-color: #ffffff; }
+  background-color: white; }
 
 .header {
   margin-right: auto;
@@ -252,7 +253,7 @@ b {
   font-weight: lighter;
   font-style: italic;
   text-align: center;
-  color: #ffffff; }
+  color: white; }
   @media (max-width: 479px) {
     .home__hero {
       max-width: 220px;
@@ -266,7 +267,7 @@ b {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    background-color: #ffffff;
+    background-color: white;
     background-color: rgba(255, 255, 255, 0.4); }
     @media (max-width: 479px) {
       .home__hero:before, .home__hero:after {
@@ -323,6 +324,15 @@ b {
   font-style: italic;
   text-transform: none; }
 
+.menu__desc {
+  margin-bottom: 36px;
+  padding: 18px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #f3f3f0; }
+
 .menu {
   padding-left: 28px;
   list-style-type: decimal; }
@@ -343,7 +353,7 @@ b {
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #788a90;
-    color: #ffffff;
+    color: white;
     font-size: 13px;
     font-weight: bold;
     line-height: 20px;
@@ -371,7 +381,7 @@ b {
   padding-right: 8px;
   display: inline;
   position: relative;
-  background-color: #ffffff;
+  background-color: white;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.66;
@@ -392,7 +402,7 @@ b {
   position: absolute;
   top: 2px;
   right: 0;
-  background-color: #ffffff;
+  background-color: white;
   font-weight: bold;
   z-index: 1; }
 
@@ -611,5 +621,3 @@ b {
 
 .press a + a {
   margin-left: 20px; }
-
-/*# sourceMappingURL=application.css.map */
